@@ -1,0 +1,177 @@
+html{
+    font-family: sans-serif;
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+    background-color: #00000081;
+}
+
+.header_logo{
+    width: 4em;
+    height: auto;
+    
+}
+
+#hamburguer {
+    background-color:#178140;
+    color: #000000;
+    display: block;
+    text-align: center;
+    padding: 0.3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.header_nav{
+    display: none;
+}
+
+.header_nav.show {
+    display: block;
+}
+
+ul{
+    margin: 0;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.header_nav a{
+    color: #073a02e8;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover {
+    background-color: color-mix(in srgb,#0c6b37,#fff 50%);
+    color: white;
+}
+
+
+@media screen and (min-width: 48em) { /* 768px maior que */
+    
+    #hamburguer {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #00000062;
+    }
+
+    .header_logo {
+        margin-left: 2em;        
+    }
+
+    .header_nav {
+        display: block;
+    }
+
+    .header_nav ul {
+        margin-right: 2em;
+        font-size: 1em;
+    }
+
+    .header_nav li {
+        display: inline-block;
+    }
+
+    .header_nav a {
+        border-radius: 5px;
+    }
+
+    .header_nav a:hover {
+        background-color: #178140;
+        color: #fff;
+    }
+    
+}
+
+body {
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.fundo_main {
+    background-image: url(imagens/natal_capa2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.galeria a{
+    text-decoration: none;
+    display: inline-block;
+    padding: .8em 1em;
+    font-size: 1.5em;    
+    background-color: #073a02da;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'lumanosimo', coursive;
+    letter-spacing: .1em;        
+}
+
+.galeria a:hover{
+    background-color: #917602da;
+    color: #fff;
+}
+
+footer {
+    background-color: #073a02a9;
+    color: #fff;
+    padding: 1em; 
+    text-align: center;
+    font-size: .8em;  
+}
+
+.rodape_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rodape-icone {
+    margin: 0 10px;
+}
+
+.rodape-icone img {
+    width: 40px;
+    height: 40px;
+    display: flexbox;
+    margin-bottom: .5em;
+}
+
+@media screen and (max-width: 48em) {
+    .rodape_icons {
+      flex-direction: column;
+      align-items: center;
+     
+    }
+    
+    .rodape-icone {
+      margin: 10px 0px;
+      
+    }
+  }
+
+
+
